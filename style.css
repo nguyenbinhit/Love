@@ -42,14 +42,23 @@ h2 strong {
 }
 
 .countdown {
-  width: 720px;
+  width: 100%;
   margin: 0 auto;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 .countdown .bloc-time {
   float: left;
   margin-right: 45px;
   text-align: center;
+  
 }
+
+.countdown .bloc-time:nth-child(1), .countdown .bloc-time:nth-child(2) {
+  display: none;
+}
+
 .countdown .bloc-time:last-child {
   margin-right: 0;
 }
